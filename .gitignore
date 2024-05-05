@@ -1,11 +1,9 @@
 node_modules/
 .DS_Store
-blueprint*
 yarn-error.log
 yarn.lock
 package-lock.json
 .processes
 **/Caddyfile
 snapshots/
-.env
 .pm2

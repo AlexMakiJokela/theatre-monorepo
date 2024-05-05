@@ -1,0 +1,32 @@
+skills:
+- git@github.com:sprucelabsai/spruce-heartwood-skill.git
+- git@github.com:sprucelabsai/spruce-mercury-api.git
+- git@github.com:AlexMakiJokela/odin-pneumatics-skill.git
+
+admin:
+- phone: 555-000-0000
+
+env:
+  universal:
+  - DB_NAME: '{{namespace}}'
+  - DB_CONNECTION_STRING: mongodb://localhost:27018
+  - MAXIMUM_LOG_PREFIXES_LENGTH: 1
+  - HOST: http://localhost:8081
+  heartwood:
+  - DB_NAME: heartwood
+  - ERROR_PAGE_MESSAGE: Oh no! If the error message above is not helpful,
+      call us at 720-863-4119 or email us at support@lumenalabs.com
+  - ERROR_PAGE_REDIRECT_DESTINATION: http://192.168.8.10:8080
+  - FOOTER_ICON: https://sprucelabs-misc.s3.us-east-2.amazonaws.com/lumena/footer-icon.svg
+  - HOST: http://127.0.0.1:8081
+  - MAXIMUM_LOG_PREFIXES_LENGTH: '1'
+  - SKILL_API_KEY: 659f57f69fb16baf00a12a0a
+  - SKILL_ID: 659f57f69fb16baf00a12a09
+  - SKILL_NAME: heartwood
+  mercury:
+  - ADMIN_NUMBERS: 555-000-0000
+  - SHOULD_ENABLE_LLM: false
+  - DEFAULT_SENDER_DELIVERY_MECHANISM: passing
+  - DEMO_NUMBERS: '*'
+  - ANONYMOUS_PERSON_PHONE: 555-000-0001
+  - PORT: 8081
